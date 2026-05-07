@@ -175,8 +175,8 @@ Separating CPU and IO queues helped reduce contention and improved scheduling ef
 
 ---
 
-# Notes
+# Tool Use Discloser
 
-- This project is a simulation, not a real operating system scheduler
-- Uses Rust standard library concurrency primitives
-- Designed for demonstrating scheduling and concurrency concepts
+ChatGpt was used for help in this project. I mainly used it when i came across errors i was having trouble to understand.
+One example was when i was getting an error on Rusts random number generator library.
+
