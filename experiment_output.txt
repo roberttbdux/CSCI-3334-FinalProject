@@ -1,0 +1,32 @@
+
+== FIFO simulation ==
+1000 tasks, 70% IO / 30% CPU, 8 workers, cap 100%
+
+-- results --
+total runtime          : 10212 ms
+makespan               : 10209 ms
+tasks completed        : 1000 (IO=695, CPU=305)
+avg wait time          : 5169.45 ms
+avg turnaround time    : 5241.81 ms
+max wait time          : 9588 ms
+avg CPU usage          : 88.46 %
+avg workers active     : 7.08 / 8
+monitor samples        : 1020
+monitor csv            : monitor_log.csv
+
+== Optimized simulation ==
+1000 tasks, 70% IO / 30% CPU, 8 workers, cap 100%
+
+-- results --
+total runtime          : 10217 ms
+makespan               : 10214 ms
+tasks completed        : 1000 (IO=695, CPU=305)
+avg wait time          : 4671.64 ms
+avg wait (IO only)     : 3758.79 ms
+avg wait (CPU only)    : 6751.72 ms
+avg turnaround time    : 4744.01 ms
+max wait time          : 9563 ms (task #306)
+avg CPU usage          : 88.42 %
+avg workers active     : 7.07 / 8
+monitor samples        : 1021
+monitor csv            : monitor_log.csv
